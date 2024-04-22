@@ -6,6 +6,7 @@ function App() {
   const [counter, setCounter] = useState(0)
 
   const increase_value = () =>{
+    if(counter <20)
     setCounter(counter + 1)
   }
 

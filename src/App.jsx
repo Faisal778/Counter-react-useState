@@ -19,10 +19,17 @@ function App() {
   return (
     <>
         <h1>Counter {counter}</h1>
-        <button
-        onClick={increase_value}>Increase Number</button>
-        <button
+        <button style= {{backgroundColor: "tomato"}}
         onClick={decrease_value}>Decrease Number</button>
+      &nbsp;
+        <button style={{backgroundColor: "lightgreen"}}
+        onClick={increase_value}>Increase Number</button>
+    
+
+      <h5>This counter should be updated to latest  {counter}</h5>
+
+      <h2>This counter should be updated as well  {counter}</h2>
+
     </>
   )
 }

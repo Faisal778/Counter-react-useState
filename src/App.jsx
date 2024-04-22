@@ -8,14 +8,19 @@ function App() {
   const increase_value = () =>{
     setCounter(counter + 1)
   }
-  
+
+  const decrease_value = () =>{
+    setCounter(counter - 1)
+  }
+
 
   return (
     <>
         <h1>Counter {counter}</h1>
         <button
         onClick={increase_value}>Increase Number</button>
-        <button>Decrease Number</button>
+        <button
+        onClick={decrease_value}>Decrease Number</button>
     </>
   )
 }
